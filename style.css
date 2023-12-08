@@ -88,6 +88,29 @@ nav ul li {
 .post h3 {
     color: #555;
 }
+/* Theme Switcher Styling */
+.theme-switcher {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1000; /* ensures it stays above other content */
+}
+
+/* Dark Theme Styling */
+body.dark-theme {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+.dark-theme nav {
+    background-color: #222;
+}
+
+.dark-theme nav ul li {
+    color: #f0f0f0;
+}
 
 /* Responsive Design (Optional) */
 @media screen and (max-width: 600px) {
