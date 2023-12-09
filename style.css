@@ -1,122 +1,65 @@
-/* General Body Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif; /* A playful font */
+    background-color: #FDE9EA; /* Soft pink background */
+    color: #333; /* Dark gray text for readability */
+    line-height: 1.6; /* Spacing out the lines for readability */
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-    color: #333;
 }
 
-h1, h2 {
-    text-align: center;
-    color: #333;
+header h1 {
+    color: #869F77; /* Olive green color for the header */
 }
 
-/* Navigation Bar Styling */
 nav {
-    background-color: #333;
-    padding: 10px 0;
-    margin-bottom: 20px;
+    background-color: #869F77; /* Olive green background for the navbar */
 }
 
 nav ul {
-    list-style: none;
-    text-align: center;
     padding: 0;
+    list-style-type: none;
+    text-align: center;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
-    cursor: pointer;
-    color: white;
-    font-size: 18px;
+    margin-right: 20px;
 }
 
-/* About Page Styling */
-#about {
-    margin: 20px;
+nav ul li a {
+    text-decoration: none;
+    color: #FDE9EA; /* Soft pink text for links */
+    font-weight: bold;
 }
 
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    display: block;
+nav ul li a:hover {
+    color: #FFF; /* White text on hover */
+}
+
+#experience-content {
+    background-color: #ffffff; /* White background for the content area */
+    padding: 20px;
     margin: 20px auto;
+    max-width: 800px; /* Set a max-width for the content area */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow around the content area */
 }
 
-/* Projects Page Styling */
-#projects {
-    margin: 20px;
+.experience-item {
+    margin-bottom: 30px;
 }
 
-.project {
-    margin: 20px;
-    text-align: center;
+.experience-item h3 {
+    color: #333;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif; /* Consistent playful font for headings */
 }
 
-.project img {
-    width: 100%;
-    height: auto;
-    max-width: 600px; /* Adjust based on your preference */
-}
-
-/* Experiences Page Styling */
-#experience {
-    margin: 20px;
-}
-
-#experience ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#experience li {
-    margin-bottom: 15px;
-}
-
-/* Blog Page Styling */
-#blog {
-    margin: 20px;
-}
-
-.post {
-    margin: 20px;
-}
-
-.post h3 {
-    color: #555;
-}
-/* Theme Switcher Styling */
 .theme-switcher {
+    font-size: 1.5rem; /* Larger size for the theme switcher icon */
     position: fixed;
     top: 10px;
     right: 10px;
-    font-size: 24px;
     cursor: pointer;
-    z-index: 1000; /* ensures it stays above other content */
+    z-index: 1000;
 }
 
-/* Dark Theme Styling */
-body.dark-theme {
-    background-color: #333;
-    color: #f0f0f0;
-}
-
-.dark-theme nav {
-    background-color: #222;
-}
-
-.dark-theme nav ul li {
-    color: #f0f0f0;
-}
-
-/* Responsive Design (Optional) */
-@media screen and (max-width: 600px) {
-    nav ul li {
-        display: block;
-        text-align: center;
-        margin-top: 10px;
-    }
-}
+/* Additional styles for other elements can go here */
