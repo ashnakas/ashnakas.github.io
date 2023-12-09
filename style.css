@@ -35,7 +35,13 @@ nav ul li a {
 nav ul li a:hover {
     color: #FFF; /* White text on hover */
 }
-
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}
 #experience-content {
     background-color: #ffffff; /* White background for the content area */
     padding: 20px;
