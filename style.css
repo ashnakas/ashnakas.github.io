@@ -1,10 +1,11 @@
 body {
-    font-family: 'Comic Sans MS', 'Arial', sans-serif; /* A playful font */
+    font-family: Arial, sans-serif; /* Changed to a more standard sans-serif font */
     background-color: #FDE9EA; /* Soft pink background */
     color: #333; /* Dark gray text for readability */
     line-height: 1.6; /* Spacing out the lines for readability */
     margin: 0;
     padding: 0;
+    text-align: center; /* Center-aligning all text */
 }
 
 header h1 {
@@ -18,7 +19,8 @@ nav {
 nav ul {
     padding: 0;
     list-style-type: none;
-    text-align: center;
+    display: inline-block; /* Center the nav list */
+    margin: 0; /* Remove default margin */
 }
 
 nav ul li {
@@ -35,13 +37,7 @@ nav ul li a {
 nav ul li a:hover {
     color: #FFF; /* White text on hover */
 }
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    display: block;
-    margin: 20px auto;
-}
+
 #experience-content {
     background-color: #ffffff; /* White background for the content area */
     padding: 20px;
@@ -52,11 +48,11 @@ nav ul li a:hover {
 
 .experience-item {
     margin-bottom: 30px;
+    text-align: left; /* Align text to left inside the experience items */
 }
 
 .experience-item h3 {
     color: #333;
-    font-family: 'Comic Sans MS', 'Arial', sans-serif; /* Consistent playful font for headings */
 }
 
 .theme-switcher {
@@ -66,6 +62,14 @@ nav ul li a:hover {
     right: 10px;
     cursor: pointer;
     z-index: 1000;
+}
+
+/* Centering the main content */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Additional styles for other elements can go here */
