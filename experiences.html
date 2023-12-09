@@ -7,22 +7,47 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="theme-switcher" onclick="toggleTheme()">
-        ☀️
-    </div>
-    <h1>Ashna's Amazing Website</h1>
-
+    <div class="theme-switcher" onclick="toggleTheme()">☀️</div>
+    <header>
+        <h1>Ashna's Amazing Website</h1>
+    </header>
+    
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="experiences.html">Experiences</a></li>
+            <li class="active"><a href="experiences.html">Experiences</a></li>
             <li><a href="blog.html">Blog</a></li>
         </ul>
     </nav>
 
-    <h2>Experiences</h2>
-    <!-- Include navigation and theme-switcher if needed -->
+    <div id="experience">
+        <h2>Experiences</h2>
+        <ul>
+            <li>
+                <strong>Google’s Computer Science Summer Institute</strong> - Remote<br>
+                Computer Science Student | July 2022 - August 2022<br>
+                <p>I joined a selective 4-week intensive computer science summer program, where I honed my skills in HTML/CSS and JavaScript mentored by Google engineers, participated in workshops, and presented a final project to an international Google audience.</p>
+            </li>
+            <li>
+                <strong>Lavner Education</strong> - Sandy Springs, Georgia<br>
+                Educator/IT Intern | July 2023 - August 2023<br>
+                <p>In an empowering role, I impacted over 100 students with digital skills and coding lessons, collaborated on course development, and facilitated the growth of live/online camps for a diverse student body.</p>
+            </li>
+            <li>
+                <strong>PetSuites</strong> - Cumming, Georgia<br>
+                Customer Service Representative | July 2021 - July 2023<br>
+                <p>I managed the ins and outs of pet care service, enhancing customer relations and trust through meticulous attention to their pets' wellbeing, and streamlined our booking system for over 1000 clients.</p>
+            </li>
+            <li>
+                <strong>Camp Can Do</strong> - Cumming, Georgia<br>
+                Counselor | January 2018 - July 2022<br>
+                <p>As a counselor, I nurtured young minds, mentored junior counselors, and innovatively transitioned our camp to an online format during the pandemic, keeping the spirit of scouting vibrant and engaging.</p>
+            </li>
+        </ul>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
