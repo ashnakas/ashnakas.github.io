@@ -5,51 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashna's Blog</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Ensure you include the FontAwesome library if you're using FontAwesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-     <div class="theme-switcher" onclick="toggleTheme()">
-        ☀️
-    </div>
+    <div class="theme-switcher" onclick="toggleTheme()">☀️</div>
     <header>
         <h1>Ashna's Amazing Website</h1>
     </header>
-    
+
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="experiences.html">Experiences</a></li>
-            <li><a href="blog.html">Blog</a></li>
+            <li class="active"><a href="blog.html">Blog</a></li>
         </ul>
     </nav>
-    
-    <h2>Blog</h2>
-    <!-- Repeat this block for each blog post -->
-    <div class="post">
-        <h3>Post Title</h3>
-        <p>[Post Summary]</p>
-        <a href="link-to-full-post.html">Read More</a>
-    </div>
-<div class="w3-container" style="padding:128px 16px" id="contact">
-    <h3 class="w3-center">CONTACT</h3>
-    <p class="w3-center w3-large">Lets get in touch. Send me a message:</p>
-    <div style="margin-top:48px">
-      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Atlanta, GA</p>
-      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: akasireddy3@gatech.edu</p>
-      <br>
-      <!-- <form action="action_page.php" method="post"> -->
-      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-black" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-      </form>
-    </div>
-  </div>
+
+    <main>
+        <section id="blog">
+            <h2>Blog</h2>
+            <!-- Repeat this block for each blog post -->
+            <article class="post">
+                <h3>Post Title</h3>
+                <p>[Post Summary]</p>
+                <a href="link-to-full-post.html">Read More</a>
+            </article>
+            <!-- Additional blog posts go here -->
+        </section>
+        
+        <section id="contact" class="w3-container" style="padding:128px 16px">
+            <h3 class="w3-center">Contact</h3>
+            <p class="w3-center w3-large">Let's get in touch. Send me a message:</p>
+            <div style="margin-top:48px">
+              <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Atlanta, GA</p>
+              <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: rambalam3@gatech.edu</p>
+              <br>
+              <!-- You can uncomment the form action and method when you have a server-side script to handle the form submission -->
+              <form action="/submit_form" method="post">
+                  <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+                  <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+                  <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+                  <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+                  <p>
+                    <button class="w3-button w3-black" type="submit">
+                      <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                  </p>
+              </form>
+            </div>
+        </section>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>
